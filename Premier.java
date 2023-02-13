@@ -22,10 +22,19 @@ public class Premier extends Politician{
     // setters
     
     // other
+    // @Override
+    // public String toString(){
+        // String st = "Hn " + lastName + ", " + party + ": Approval " + approvalRating + "%.";
+        // return st;
+    // }
+    
     @Override
     public String toString(){
-        String st = "Hn " + lastName + ", " + party + ": Approval " + approvalRating + "%.";
-        return st;
+        StringBuilder sb = new StringBuilder();
+        sb.append("Hn " + lastName);
+        sb.append(", " + party + ": Approval ");
+        sb.append(approvalRating + "%.");
+        return sb.toString();
     }
 }
 
